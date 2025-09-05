@@ -142,6 +142,9 @@ AudioScreen depends on [libaudioverse 0.8](https://www.github.com/camlorn/libaud
 * cd to the audioScreen repository you cloned with git
 * Run the command: pip install --ignore-installed -t addon\globalPlugins\audioScreen\deps libaudioverse
 
+### Make slight changes to libaudioverse source code
+Under addon\globalPlugins\audioScreen\deps\libaudioverse edit __init__.py and _lab.py, replacing references to collections.Sized to collections.abc.Sized.
+
 ### Packaging the NVDA add-on
 In the addon directory:
 * Edit manifest.ini to set the version of the add-on etc.
